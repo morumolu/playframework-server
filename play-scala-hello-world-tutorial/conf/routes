@@ -10,6 +10,8 @@ GET     /tutorial                           controllers.HomeController.tutorial
 
 GET     /hello/:message                     controllers.HelloController.index(message: String)
 
+GET     /:number                            controllers.FizzBuzzController.calc(number: Int)
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
